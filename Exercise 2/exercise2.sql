@@ -1,0 +1,1 @@
+select count(*) from tungvognsnet, cykelstativ  where st_distance(tungvognsnet.wkb_geometry, cykelstativ.wkb_geometry) < 5;

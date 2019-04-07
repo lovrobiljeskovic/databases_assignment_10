@@ -1,0 +1,2 @@
+select count(*) from f_udsatte_byomraader, parkregister where st_contains(f_udsatte_byomraader.wkb_geometry, parkregister.wkb_geometry);
+select count(*) from f_udsatte_byomraader, gadetraer where st_contains(f_udsatte_byomraader.wkb_geometry, gadetraer.wkb_geometry);
